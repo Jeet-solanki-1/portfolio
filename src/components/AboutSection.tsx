@@ -11,7 +11,7 @@ const AboutSection = () => {
             About Me
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-in animation-delay-200">
-            Get to know more about my journey, passion, and what drives me as a
+            Get to know more about my persionality, percpective, and what drives me as a
             developer
           </p>
         </div>

@@ -58,15 +58,7 @@ const HeroSection = () => {
             >
               <Github className="h-6 w-6" />
             </a>
-            <a
-              href={portfolioData.social.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-200 hover:scale-110"
-              aria-label="LinkedIn"
-            >
-              <Linkedin className="h-6 w-6" />
-            </a>
+            
             <a
               href={`mailto:${portfolioData.social.email}`}
               className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-200 hover:scale-110"

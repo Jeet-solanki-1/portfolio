@@ -7,6 +7,7 @@ import { Label } from '@/components/ui/label';
 import { Mail, Phone, MapPin, Send, Download } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { portfolioData } from '@/data/portfolio';
+import { downloadResume } from '@/utils/resumeDownload';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -121,7 +122,7 @@ const ContactSection = () => {
             </div>
 
             <div className="pt-8">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto" onClick={downloadResume}>
                 <Download className="mr-2 h-4 w-4" />
                 Download Resume
               </Button>

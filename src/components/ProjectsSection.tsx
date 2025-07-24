@@ -117,9 +117,9 @@ const ProjectsSection = () => {
                   <CardHeader>
                     <div className="flex items-start justify-between">
                       <div className="flex items-center gap-3">
-                        <div className="p-2 rounded-lg bg-primary/10 text-primary">
+                        {/* <div className="p-2 rounded-lg bg-primary/10 text-primary">
                           <project.icon className="h-6 w-6" />
-                        </div>
+                        </div> */}
                         <div>
                           <CardTitle className="text-xl font-semibold">
                             {project.title}
@@ -129,100 +129,130 @@ const ProjectsSection = () => {
                           </p>
                         </div>
                       </div>
-                      <Button
+                        <Button
                         variant="ghost"
                         size="sm"
                         onClick={() => toggleProject(project.id)}
-                        className="ml-4"
-                      >
+                        className="ml-4 flex items-center gap-2"
+                        aria-expanded={expandedProject === project.id}
+                        >
                         {expandedProject === project.id ? (
-                          <ChevronUp className="h-4 w-4" />
+                          <>
+                          Collapse <ChevronUp className="h-4 w-4" />
+                          </>
                         ) : (
-                          <ChevronDown className="h-4 w-4" />
+                          <>
+                          Expand <ChevronDown className="h-4 w-4" />
+                          </>
                         )}
-                      </Button>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex items-center justify-between mb-4">
-                      <div className="flex flex-wrap gap-2">
+                        </Button>
+                      </div>
+                      </CardHeader>
+                      <CardContent>
+                      <div className="mb-4 flex flex-wrap gap-2">
                         {project.technologies.map((tech) => (
-                          <Badge key={tech} variant="secondary">
-                            {tech}
-                          </Badge>
+                        <Badge key={tech} variant="secondary">
+                          {tech}
+                        </Badge>
                         ))}
                       </div>
-                      {project.githubUrl && project.githubUrl !== '#' && (
+                      <div className="flex gap-3 mb-4">
+                        {project.liveUrl && (
                         <Button size="sm" variant="outline" asChild>
                           <a
-                            href={project.githubUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           >
-                            <Github className="h-4 w-4 mr-2" />
-                            View Code
+                          <ExternalLink className="h-4 w-4 mr-2" />
+                          Live Demo
                           </a>
                         </Button>
-                      )}
-                    </div>
-
-                    {expandedProject === project.id && (
-                      <div className="mt-6 space-y-6 border-t border-border pt-6 animate-fade-in">
-                        <div>
-                          <h4 className="font-semibold text-foreground mb-2">
-                            Project Overview
-                          </h4>
-                          <p className="text-muted-foreground">
-                            {project.expandedContent.overview}
-                          </p>
-                        </div>
-
-                        <div>
-                          <h4 className="font-semibold text-foreground mb-2">
-                            My Responsibilities
-                          </h4>
-                          <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                            {project.expandedContent.responsibilities.map(
-                              (resp, idx) => (
-                                <li key={idx}>{resp}</li>
-                              )
-                            )}
-                          </ul>
-                        </div>
-
-                        <div>
-                          <h4 className="font-semibold text-foreground mb-2">
-                            Technical Approach
-                          </h4>
-                          <p className="text-muted-foreground">
-                            {project.expandedContent.approach}
-                          </p>
-                        </div>
-
-                        <div>
-                          <h4 className="font-semibold text-foreground mb-2">
-                            Challenges & Solutions
-                          </h4>
-                          <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                            {project.expandedContent.challenges.map(
-                              (challenge, idx) => (
-                                <li key={idx}>{challenge}</li>
-                              )
-                            )}
-                          </ul>
-                        </div>
-
-                        <div>
-                          <h4 className="font-semibold text-foreground mb-2">
-                            Outcome & Impact
-                          </h4>
-                          <p className="text-muted-foreground">
-                            {project.expandedContent.outcome}
-                          </p>
-                        </div>
+                        )}
+                        <Button size="sm" variant="outline" asChild>
+                        <a
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Github className="h-4 w-4 mr-2" />
+                          Code
+                        </a>
+                        </Button>
                       </div>
-                    )}
-                  </CardContent>
+                      {expandedProject === project.id && (
+                        <div className="mt-6 space-y-6 border-t border-border pt-6 animate-fade-in">
+                        <div>
+                          <h4 className="font-semibold text-foreground mb-2">Vision</h4>
+                          <p className="text-muted-foreground">{project.expandedContent.vision}</p>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-foreground mb-2">Unique Value</h4>
+                          <p className="text-muted-foreground">{project.expandedContent.uniqueValue}</p>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-foreground mb-2">Core Innovations</h4>
+                          <ul className="list-disc pl-5 text-muted-foreground">
+                            {project.expandedContent.coreInnovations.map((item, i) => (
+                              <li key={i}>{item}</li>
+                            ))}
+                          </ul>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-foreground mb-2">Technical Architecture</h4>
+                          <div className="space-y-2 text-muted-foreground">
+                            <div><strong>Overview:</strong> {project.expandedContent.technicalArchitecture.overview}</div>
+                            <div>
+                              <strong>Services:</strong>
+                              <ul className="list-disc pl-5">
+                                {project.expandedContent.technicalArchitecture.services.map((svc, i) => (
+                                  <li key={i}>{svc}</li>
+                                ))}
+                              </ul>
+                            </div>
+                            <div><strong>Android App:</strong> {project.expandedContent.technicalArchitecture.androidApp}</div>
+                          </div>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-foreground mb-2">Business Model</h4>
+                          <div className="space-y-2 text-muted-foreground">
+                            <div><strong>Revenue Stream:</strong> {project.expandedContent.businessModel.revenueStream}</div>
+                            <div><strong>Psychology Edge:</strong> {project.expandedContent.businessModel.psychologyEdge}</div>
+                            <div><strong>Market Position:</strong> {project.expandedContent.businessModel.marketPosition}</div>
+                          </div>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-foreground mb-2">Development Journey</h4>
+                          <div className="space-y-2 text-muted-foreground">
+                            <div><strong>Conception:</strong> {project.expandedContent.developmentJourney.conception}</div>
+                            <div><strong>Planning:</strong> {project.expandedContent.developmentJourney.planning}</div>
+                            <div><strong>Execution:</strong> {project.expandedContent.developmentJourney.execution}</div>
+                            <div><strong>Validation:</strong> {project.expandedContent.developmentJourney.validation}</div>
+                          </div>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-foreground mb-2">Challenges Solved</h4>
+                          <ul className="list-disc pl-5 text-muted-foreground">
+                            {project.expandedContent.challengesSolved.map((item, i) => (
+                              <li key={i}>{item}</li>
+                            ))}
+                          </ul>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-foreground mb-2">Future Roadmap</h4>
+                          <ul className="list-disc pl-5 text-muted-foreground">
+                            {project.expandedContent.futureRoadmap.map((item, i) => (
+                              <li key={i}>{item}</li>
+                            ))}
+                          </ul>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-foreground mb-2">Competitive Edge</h4>
+                          <p className="text-muted-foreground">{project.expandedContent.competitiveEdge}</p>
+                        </div>
+                        </div>
+                      )}
+                      </CardContent>
                 </Card>
               ))}
             </div>
