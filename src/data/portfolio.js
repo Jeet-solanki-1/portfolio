@@ -31,31 +31,24 @@ import SocketioOriginal from 'devicons-react/icons/SocketioOriginal';
 import HibernateOriginal from 'devicons-react/icons/HibernateOriginal';
 import GooglecloudOriginal from 'devicons-react/icons/GooglecloudOriginal';
 
-import {
-  Server,
-  Database,
-  Zap,
-  BotIcon,
-  ServerIcon,
-  TrophyIcon,
-} from 'lucide-react';
+
 
 // Portfolio Configuration Data
 export const portfolioData = {
   // Personal Information
   personal: {
-    name: 'Abhishek Rathore',
+    name: 'Jeet Solanki',
     title: 'Software Developer',
-    // tagline: 'Specializing in backend development with Java, Spring Boot, and modern cloud technologies. Building scalable, efficient solutions that power great user experiences.',
+    // tagline: 'Specializing in backend development with Java, Spring Boot, and modern cloud technologies.Building efficient solutions that power great Ideas.',
     tagline:
-      'Backend-focused developer specializing in Java, Spring Boot, and cloud-native architectures — building scalable systems that deliver real business value.',
+      'Backend-focused developer specializing in Java, Spring Boot, and cloud-native architectures.',
     // tagline: 'Specializing in Java and Spring Boot, I build reliable backend systems and cloud-native solutions that scale with business needs.',
     // tagline: 'Engineer focused on Java-based backend systems, microservices, and cloud infrastructure — creating performant APIs and scalable business solutions.',
     // tagline: 'Java backend developer building scalable APIs, microservices, and cloud-native solutions with Spring Boot.',
     location: 'india',
-    email: 'abhira719@gmail.com',
-    phone: '+91 8839705239',
-    resumeFileName: 'Abhishek-Rathore-Resume',
+    email: 'solankijeet285@gmail.com',
+    phone: '+91 8815591858',
+    resumeFileName: 'Jeet-Solanki-Resume',
   },
   // about: {
   //   introduction:
@@ -68,18 +61,16 @@ export const portfolioData = {
   //     "Outside of development, I enjoy exploring new frameworks, contributing to technical blogs, and mentoring junior developers. When I’m not immersed in code, I like hiking, experimenting with cooking, and following emerging trends in AI/ML and system design — keeping my perspective wide and fresh."
   // },
   about: {
-    introduction: `I'm a software engineer with over 5 years of hands-on experience building robust backend systems, scalable microservices, and efficient cloud-native applications. My expertise lies in Java, Spring Boot, RESTful APIs, and modern backend architecture. Having worked across mid-size product teams and agile enterprise environments, I enjoy solving real-world problems through clean, maintainable code.`,
-    whatIDo: `In my current role, I lead backend initiatives using Java, Spring Boot, Kafka, and PostgreSQL. I'm experienced in designing secure APIs, implementing microservices, and optimizing performance across systems serving thousands of users daily. I also have solid experience in Redis caching, Dockerized deployments, and CI/CD pipeline setup via Jenkins and GitHub Actions. On the frontend, I’ve worked with React, Angular, and TypeScript when needed.`,
-    philosophy: `I believe in writing code that’s built to last. I'm a strong proponent of clean code practices, meaningful reviews, and performance-first thinking. I regularly engage in refactoring, automated testing (JUnit/Mockito), and using metrics to guide performance improvements. For me, engineering is not just about writing code — it’s about building systems that are reliable, testable, and user-centric.`,
-    beyondCode: `Outside of work, I enjoy learning emerging tools and exploring how AI and LLMs are reshaping the software development landscape. I occasionally contribute to personal projects, technical blogs, and open-source when time permits. I'm also passionate about sharing knowledge and have mentored junior developers within teams. Beyond tech, I find balance through fitness, travel, and the occasional cricket match.`,
-  },
+    introduction: `I'm a software engineer with research oriented mind building robust backend systems, scalable microservices, and efficient cloud-native applications. My expertise lies in Java, Spring Boot, RESTful APIs, and modern backend architecture. Having worked across projects mentor by senior developer, I like to go deeper and think how can i do this without using the library.`,
+    whatIDo: `In my current role, I Observer, think recorsively, and learn, while building Unique projects backend by self frontend by ai, using Java, Spring Boot, and MySql. I'm experienced in designing secure APIs, implementing microservices, and Prefer to make generic services to achive 'Do not write by yourself' . I also have also some knowledg in Dockerized deployments, and CI/CD pipeline setup via GitHub Actions. On the frontend, I’ve worked with React, but not like to build by self at all, and TypeScript yes its kidn of kotlin and kotlin kind of java when needed.`,
+    philosophy: `I believe in writing code like to provide placeholders means you can use anywhere just generic. I'm a strong to make modualar and independent code, extract codes that not change, and play with those remaining bouncy codes. I regularly engage in refactoring, automated testing (JUnit/Mockito), and using simulations with user perspective to figure out which is likeable and which is not. For me, engineering is being the creator of non-living civilialization.`,
+    beyondCode: `Outside of work, I Observe present time with a third persion eye, i like nature that's why i chose to be a backend developer, becouse software can simulate nature, I write thesis on brain, machine counciouseness, and recursive obervation believe is my persional novel.`,
 
   // Social Links
   social: {
-    github: 'https://github.com/abhishekra07',
-    linkedin: 'https://www.linkedin.com/in/abhishek-rathore-666972127',
-    email: 'abhira719@gmail.com',
-    portfolio: 'https://abhishek-developer-portfolio.netlify.app/',
+    github: 'https://github.com/Jeet-solanki-1',
+    email: 'solankijeet285@gmail.com',
+    portfolio: 'https://Jeet-Solanki-portfolio.netlify.app/',
   },
 
   // Technical Skills
@@ -92,39 +83,26 @@ export const portfolioData = {
       { name: 'JPA/Hibernate', icon: HibernateOriginal },
       { name: 'Microservices', icon: SpringOriginal },
       { name: 'REST APIs', icon: PostmanOriginal },
-      { name: 'Kafka', icon: ApachekafkaOriginal },
-      { name: 'Redis', icon: RedisOriginal },
-      { name: 'AWS', icon: AmazonwebservicesOriginalWordmark },
       { name: 'GCP', icon: GooglecloudOriginal },
       { name: 'Maven', icon: MavenOriginal },
       { name: 'JUnit', icon: JunitOriginal },
-      { name: 'WebSocket', icon: SocketioOriginal },
-      { name: 'Node.js', icon: JavascriptOriginal },
       { name: 'npm', icon: NpmOriginalWordmark },
     ],
     frontend: [
+       
       { name: 'React', icon: ReactOriginal },
-      { name: 'Angular', icon: AngularOriginal },
-      { name: 'Vue.js', icon: VuejsOriginal },
       { name: 'TypeScript', icon: TypescriptOriginal },
       { name: 'JavaScript', icon: JavascriptOriginal },
-      { name: 'JQuery', icon: JqueryOriginal },
       { name: 'HTML5', icon: Html5Original },
       { name: 'CSS3', icon: Css3Original },
-      { name: 'Tailwind CSS', icon: TailwindcssOriginal },
-      { name: 'Vite', icon: VitejsOriginal },
     ],
     database: [
       { name: 'MySQL', icon: MysqlOriginal },
-      { name: 'PostgreSQL', icon: PostgresqlOriginal },
-      { name: 'MongoDB', icon: MongodbOriginal },
     ],
     devops: [
       { name: 'Docker', icon: DockerOriginal },
-      { name: 'Kubernetes', icon: KubernetesOriginal },
       { name: 'Git', icon: GitOriginal },
       { name: 'GitHub Actions', icon: GithubactionsOriginal },
-      { name: 'SonarQube', icon: SonarqubeOriginal },
     ],
     tools: [
       { name: 'IntelliJ IDEA', icon: IntellijOriginal },
@@ -133,345 +111,162 @@ export const portfolioData = {
     ],
   },
 
-  // Professional Experience
+   // Professional Experience 
   experience: [
     {
-      id: 1,
-      title: 'Associate Staff Engineer',
-      company: 'Nagarro',
-      location: 'India',
-      period: 'Mar 2022 – July 2025',
-      type: 'Full-time',
-      description:
-        'Led and contributed to multiple enterprise-level backend systems with a focus on microservices and distributed architecture.',
-      responsibilities: [
-        'Designed and implemented automated cron jobs for calculating store-to-region distances daily, optimizing logistics and operational planning.',
-        'Conducted root cause analysis for critical defects and production issues, improving bug resolution speed and software stability.',
-        'Supported manual QA testing on the COP module, significantly contributing to the reduction of QA backlog and on-time release of features.',
-        'Architected and implemented feature-specific microservices, aligning with project goals and ensuring high availability and scalability.',
-        'Developed a shared utility library used across services, enhancing maintainability and reducing code duplication.',
-        'Integrated multi-language support across services, enabling seamless internationalization and localization.',
-        'Managed end-to-end communication protocols between client systems and the adapter application, improving system reliability and performance.',
-      ],
-      technologies: [
-        'Java',
-        'Spring Boot',
-        'Redis',
-        'Kafka',
-        'Microservices',
-        'Git',
-        'CI/CD',
-        'JUnit',
-      ],
-    },
-    {
-      id: 2,
-      title: 'Analyst',
-      company: 'Deloitte',
-      location: 'India',
-      period: 'Jul 2021 – Mar 2022',
-      type: 'Full-time',
-      description:
-        'Worked on large-scale enterprise web applications and contributed to frontend and backend system optimization.',
-      responsibilities: [
-        'Developed reusable web components using micro frontend architecture, reducing development effort by 60%.',
-        'Designed and implemented dynamic user interfaces that improved user engagement and responsiveness.',
-        'Refactored monolithic components into modular on-demand apps, improving load times by 30% and enhancing scalability.',
-        'Built reactive microservices with Spring Boot, deployed on PCF (Pivotal Cloud Foundry), ensuring fault-tolerant systems.',
-        'Collaborated in the debugging and resolution of Java code issues during the SDLC, improving development velocity.',
-      ],
-      technologies: [
-        'Java',
-        'Spring Boot',
-        'React',
-        'PCF',
-        'Micro Frontends',
-        'Git',
-      ],
-    },
-    {
-      id: 3,
-      title: 'System Engineer',
-      company: 'Tata Consultancy Services (TCS)',
-      location: 'India',
-      period: 'Jun 2019 – Mar 2021',
-      type: 'Full-time',
-      description:
-        'Contributed to the modernization and migration of legacy applications into scalable cloud-native architectures.',
-      responsibilities: [
-        'Collaborated with architects to migrate a legacy pharmacy application to microservices hosted on Google Cloud App Engine.',
-        'Developed asynchronous data processing mechanisms for DB/network I/O, significantly improving system throughput and resilience.',
-        'Led a team of 6 developers to ensure the successful third-party service integration and migration.',
-        'Co-developed a Selenium-based test automation framework, reducing manual QA effort and increasing test coverage.',
-      ],
-      technologies: [
-        'Java',
-        'Spring Boot',
-        'GCP',
-        'Microservices',
-        'Selenium',
-        'Git',
-      ],
-    },
+  id: 1,
+  title: 'Founder & Lead Developer',
+  company: 'Brainz (Student-led Tech Organization)',
+  location: 'Remote / India',
+  period: 'July 2025 – Present',
+  type: 'Independent / Leadership',
+  liveUrl: 'https://brainz-docs.netlify.app/',
+   githubUrl: ' https://github.com/All-Origin',
+  description:
+    'Currently leading the design and development of Brainz, a multi-team AI-first product ecosystem, while simulating real-world engineering workflows across a student-led organization.',
+  responsibilities: [
+    'Building Brainz, an AI-powered social platform where users create, train, and engage with digital personalities ("Brainz") across mobile, web, and desktop platforms.',
+    'Leading and coordinating 6 structured technical teams: Backend (Java), Frontend Web, Frontend Native, Desktop, DevOps, and LLM Core — with clear roles, ownership, and tasks.',
+    'Actively developing full-stack features including secure authentication systems, voice-based data entry, OCR scanning, and personalized dashboards.',
+    'Managing technical documentation using Docusaurus to ensure consistency, cross-team onboarding, and architectural transparency.',
+    'Designing microservice-based backend APIs using Spring Boot with scalable data models and secure token authentication.',
+    'Developing Jetpack Compose-based Android app using Room DB, ViewModels, and biometric + PIN-based app lock for offline-first use cases.',
+    'Collaborating with peers to simulate agile sprints, Git-based workflows, and CI/CD practices, preparing for production-level engineering environments.',
   ],
+  technologies: [
+    'Java',
+    'Spring Boot',
+    'Kotlin',
+    'Jetpack Compose',
+    'Room DB',
+    'Docusaurus',
+    'Git & GitHub Projects',
+    'React',
+    'Node.js',
+    'LLM APIs',
+    'CI/CD',
+    'Docker',
+  ],
+  },
+  ],
+  
 
-  // Projects
-  projects: [
-    {
-      id: 'simply-minds',
-      title: 'Simply Minds',
-      description:
-        'Inventory management system allowing users to manage, track, and analyze stock efficiently.',
-      images: [
-        '/projects/simply-minds-1.png',
-        '/projects/simply-minds-2.png',
-        '/projects/simply-minds-3.png',
-      ],
-      technologies: ['React', 'TypeScript'],
-      liveUrl: 'https://simply-minds.netlify.app/',
-      githubUrl: 'https://github.com/abhishekra07/simply-minds',
-      features: [
-        'Inventory tracking',
-        'Real-time updates',
-        'Simple and intuitive UI',
-      ],
-    },
-    {
-      id: 'logi-truck',
-      title: 'Logi Truck',
-      description:
-        'Logistics management platform designed to handle transportation fleet and operational tasks.',
-      images: [
-        '/projects/logi-truck-1.png',
-        '/projects/logi-truck-2.png',
-        '/projects/logi-truck-3.png',
-      ],
-      technologies: ['React'],
-      liveUrl: 'https://logi-track.netlify.app/',
-      githubUrl: 'https://github.com/abhishekra07/transport-app',
-      features: ['Fleet tracking', 'Task scheduling', 'Freelancer-friendly UI'],
-    },
-    {
-      id: 'tee-craft',
-      title: 'TeeCraft',
-      description:
-        'Interactive t-shirt designer that lets users add logos, stickers, and text, and download the final design.',
-      images: [
-        '/projects/tee-craft-1.png',
-        '/projects/tee-craft-2.png',
-        '/projects/tee-craft-3.png',
-        '/projects/tee-craft-4.png',
-      ],
-      technologies: ['React', 'Fabric.js'],
-      liveUrl: 'https://teecraft.netlify.app/',
-      githubUrl: 'https://github.com/abhishekra07/tshirt-designer#',
-      features: [
-        'Drag-and-drop design tools',
-        'Sticker and text customization',
-        'Downloadable high-quality output',
-      ],
-    },
-    {
-      id: 4,
-      title: 'Voice Assistant News App',
-      description:
-        'A React-based voice-controlled news app using Alan AI for searching and reading news aloud.',
-      longDescription:
-        'Users can use voice commands to interact with the app for reading news based on keywords, channels, or sources. Enhances accessibility and hands-free interaction using Alan AI voice assistant.',
-      images: [],
-      technologies: ['ReactJS', 'Alan AI', 'JavaScript'],
-      features: [
-        'Voice-controlled search',
-        'Live news updates',
-        'Accessible UI',
-      ],
-      githubUrl: 'https://github.com/abhishekra07/Voice-Assistant-News-App',
-      liveUrl: '',
-      status: 'Completed',
-    },
-    {
-      id: 5,
-      title: 'Income-Expense Tracker',
-      description:
-        'React-based app to track income and expenses with category-wise filtering and visual analysis.',
-      longDescription:
-        'The tracker supports adding income/expenses, categorizing them with hashtags, and shows ratio-based analysis using charts and modern UI components.',
-      images: [],
-      technologies: ['ReactJS', 'Material UI', 'JavaScript'],
-      features: [
-        'Category-based tracking',
-        'Hashtag tagging',
-        'Expense analysis UI',
-      ],
-      githubUrl: 'https://github.com/abhishekra07/income-expense-tracker',
-      liveUrl: '',
-      status: 'Completed',
-    },
-    {
-      id: 6,
-      title: 'Wildfire Tracker',
-      description:
-        'A React app that integrates NASA EONET API to visualize wildfire data on Google Maps.',
-      longDescription:
-        'This real-time wildfire tracker fetches incident data using NASA EONET APIs and marks their geolocation on Google Maps to help users track wildfire spread.',
-      images: [],
-      technologies: ['ReactJS', 'Google Maps API', 'NASA EONET API'],
-      features: [
-        'Real-time wildfire data',
-        'Google Maps integration',
-        'Marker visualization',
-      ],
-      githubUrl: 'https://github.com/abhishekra07/wildfire-tracker',
-      liveUrl: '',
-      status: 'Completed',
-    },
-  ],
+ // Projects
+projects: [
+  {
+    id: 'placelive',
+    title: 'PlaceLive',
+    description:
+      'Revolutionary location-aware platform that transforms how people discover places and connect with friends through real-time geofencing, AI-driven behavioral psychology, and monetized shop sponsorships.',
+    images: [
+      '/projects/placelive-1.jpg',
+      '/projects/placelive-2.jpg',
+      '/projects/placelive-3.jpg',
+      '/projects/placelive-4.jpg',
+    ],
+    technologies: [
+      'Android (Kotlin)',
+      'Spring Boot Microservices',
+      'PostgreSQL',
+      'Docker',
+      'Geofencing APIs',
+      'Background Location Services',
+      'JPA/Hibernate',
+      'Custom Generic CRUD Library',
+    ],
+    githubUrl: 'https://github.com/orgs/JLSS-virtual/repositories', // Update with actual URL
+    liveUrl: '', // Will be added when deployed
+    status: 'Prototype Complete: But private repository you can ask for access',
+    features: [
+      'Real-time geofencing with dynamic radius detection',
+      'Friend-based live tracking with privacy controls',
+      'Shop sponsorship and monetization system',
+      'Role-based place access (public/private)',
+      'Request system for nearby friend assistance',
+      'Background location tracking with battery optimization',
+    ],
+    expandedContent: {
+      vision: 
+        'PlaceLive emerged from a real college frustration - calling friends one by one asking "Are bhai kaha ho?" when needing something from nearby shops. This sparked a vision to create the world\'s most comprehensive place-aware ecosystem, competing directly with Google\'s location dominance by owning hyperlocal interaction data.',
+      
+      uniqueValue: 
+        'Unlike existing location apps that are either privacy-focused (Find My Friends) or business-focused (Google Maps ads), PlaceLive uniquely combines three game-changing elements: real-time friend visibility at specific places, AI-powered psychological manipulation for shop recommendations, and a monetization model that makes local businesses pay to "go live" in users\' proximity.',
 
-  // Backend Projects
-  backend: [
-    {
-      id: 'therapy-chat-assistant',
-      title: 'AI-Powered Therapy Support Chat System',
-      description:
-        'Voice and text-based chat system to assist dialysis patients using AI-driven summarization and response generation.',
-      technologies: [
-        'Node.js',
-        'LangChain',
-        'OpenAI',
-        'Google Cloud',
-        'TypeScript',
+      coreInnovations: [
+        ' **Geofenced Shop Sponsorship** - Businesses pay to make their location "live". When users enter the 200-500m radius, they receive psychologically-crafted notifications like "Best mobile shop in 2km range for quality + price" based on their behavioral profile.',
+        
+        ' **Friend-Request Ecosystem** - Solving the "photocopy problem": Users search what they need, the app finds friends near relevant shops, and automatically sends requests. No more manual calling and asking who\'s where.',
+        
+        ' **Three-Layer Privacy Architecture** - Friend circle restrictions, place-specific visibility controls, and role-based access for private places (parents see kids\' home activity, workers see availability status).',
+        
+        ' **AI Behavioral Profiling** - Planned feature to analyze user emotions (sad, normal, happy) and generate personalized manipulation messages that build trust and drive purchasing decisions at sponsored locations.',
+        
+        ' **Generic Microservice Foundation** - Built a reusable Spring Boot CRUD library where services just extend GenericService and inherit all database operations, dramatically accelerating development.',
       ],
-      githubUrl: '#',
-      icon: BotIcon, // use appropriate icon
-      expandedContent: {
-        overview:
-          'Developed a personalized chat assistant for a dialysis therapy platform where users could upload post-session summaries and ask questions in natural language.',
-        responsibilities: [
-          'Integrated LangChain with OpenAI to enable document-aware conversation support.',
-          'Implemented Google Cloud Text-to-Speech and Speech-to-Text APIs for voice-based interactions.',
-          'Enabled summarization, red-flag detection, and explanation of medical terms in layman language.',
-          'Supported both real-time and follow-up Q&A through document embeddings and vector search.',
+
+      technicalArchitecture: {
+        overview: 'Designed as a scalable microservices ecosystem with 10+ days of architectural planning, then executed full prototype in 30 days.',
+        services: [
+          '**placelive-api-gateway** - Unified entry point handling routing, authentication, and rate limiting for all client requests',
+          '**placelive-user-service** - Manages user profiles, friend relationships, following/followers system, and authentication with mobile/email verification',
+          '**placelive-geofencing** - Core location intelligence detecting when users enter/exit shop radius with dynamic range calculations',
+          '**placelive-tracker** - Real-time presence management, movement logging, and privacy-controlled visibility based on place types and user permissions',
+          '**common-library** - Revolutionary generic CRUD framework where any new service inherits complete database operations by extending GenericService class',
         ],
-        approach:
-          'Used document loaders and vector storage to provide relevant context to LLM. Ensured secure handling of user health data.',
-        challenges: [
-          'Handling large and unstructured user-uploaded therapy summaries.',
-          'Maintaining conversation relevance across context windows.',
-          'Building an intuitive interface for non-technical patients.',
-        ],
-        outcome:
-          'Enabled non-clinical users to understand and engage with their therapy data, improving follow-up adherence by 40%.',
+        androidApp: 'Built with Kotlin, implementing battery-efficient background location tracking, real-time notifications, and seamless user experience for complex privacy controls.'
       },
-    },
-    {
-      id: 'clinic-microservices',
-      title: 'Clinic Platform Microservices System',
-      description:
-        'Microservices-based backend architecture for clinic platform with Kafka-based communication and document generation.',
-      technologies: [
-        'Java',
-        'Spring Boot',
-        'Apache Kafka',
-        'PostgreSQL',
-        'Docker',
+
+      businessModel: {
+        revenueStream: 'Primary monetization through shop sponsorships - businesses pay subscription fees to make their locations "live" and appear in user recommendations when they\'re nearby.',
+        psychologyEdge: 'Planned AI integration will analyze user data patterns to determine emotional states and craft manipulation messages that feel personal and trustworthy, dramatically increasing conversion rates.',
+        marketPosition: 'Direct competition with Google by owning hyperlocal place data - knowing not just where places are, but who\'s there, what they think of it, pricing insights, and user behavior patterns.',
+      },
+
+      developmentJourney: {
+        conception: 'Started from personal college experience needing photocopies urgently and having to call friends individually to find who was near the shop.',
+        planning: 'Spent 10+ days designing complete microservice data flow, UI mockups, and privacy models on paper before writing any code.',
+        execution: 'Built fully functional Android app with complete backend in just 30 days using the generic service architecture.',
+        validation: 'Tested with college students who confirmed the pain point and showed strong interest in the solution.',
+      },
+
+      challengesSolved: [
+        '**Battery Optimization** - Implemented intelligent background tracking that preserves battery while maintaining real-time accuracy',
+        '**Privacy Paradox** - Solved the conflict between useful location sharing and privacy through granular place-based permissions',
+        '**Development Speed** - Created reusable generic services that eliminated repetitive CRUD code across microservices',
+        '**Scalability Design** - Architected for thousands of concurrent users with efficient database queries and caching strategies',
+        '**Trust Building** - Designed psychology-based recommendation system to make sponsored suggestions feel genuine rather than promotional',
       ],
-      githubUrl: '#',
-      icon: ServerIcon,
-      expandedContent: {
-        overview:
-          'Designed and implemented scalable backend services for a clinic platform, focusing on modularity, event-driven design, and automation.',
-        responsibilities: [
-          'Developed secure authentication and authorization service for multi-role access.',
-          'Designed microservices architecture supporting asynchronous Kafka communication.',
-          'Built PDF document generation service using Puppeteer for dynamic clinical reports.',
-          'Implemented batch log processing for therapy device data using Kafka consumers.',
-          'Led schema design and DevOps setup for CI/CD and production deployments.',
-        ],
-        approach:
-          'Used event-driven design with Kafka for loose coupling. Adopted REST APIs with token-based security. Built async task workers for heavy processing.',
-        challenges: [
-          'Coordinating distributed microservices for real-time user workflows.',
-          'Designing extensible data models for evolving medical data schemas.',
-          'Implementing secure document storage and access.',
-        ],
-        outcome:
-          'Successfully supported onboarding of multiple clinics and thousands of therapy logs per day. Reduced support overhead with automated log reports.',
-      },
+
+      futureRoadmap: [
+        'AI personality modeling for emotion-aware shop recommendations',
+        'Payment gateway integration for commission-based purchases',
+        'Expansion beyond colleges to urban commercial areas',
+        'Advanced analytics dashboard for business sponsors',
+        'Integration with delivery services for request fulfillment',
+      ],
+
+      competitiveEdge: 
+        'While apps like Life360 focus only on family tracking and Google Maps only shows business locations, PlaceLive uniquely combines social connection, real-time commerce, and psychological personalization. The vision extends beyond app success to owning comprehensive place-intelligence data worldwide.',
     },
-    {
-      id: 'fantasy-cricket-platform',
-      title: 'Fantasy Cricket App Backend (Dream11 Clone)',
-      description:
-        'Backend system replicating key features of fantasy sports apps like Dream11 with user engagement and scoring modules.',
-      technologies: ['Node.js', 'Express', 'MongoDB', 'Redis', 'JWT'],
-      githubUrl: '#',
-      icon: TrophyIcon, // Choose a trophy or sports icon
-      expandedContent: {
-        overview:
-          'Built a fantasy sports backend that allowed users to register, create teams for live matches, and track scores based on real-time updates.',
-        responsibilities: [
-          'Created user registration, authentication, and team-building APIs.',
-          'Integrated match schedule and player stats ingestion pipeline.',
-          'Handled live scoring updates with Redis-based caching for scalability.',
-          'Implemented leaderboard calculation and prize distribution logic.',
-        ],
-        approach:
-          'Designed RESTful services using Express, with Redis to minimize latency during peak traffic. Adopted modular service structure for easy future extension.',
-        challenges: [
-          'Simulating real-time updates and point calculations accurately.',
-          'Preventing cheating or score tampering with strict validations.',
-          'Handling concurrent requests during match start times.',
-        ],
-        outcome:
-          'Delivered a fully working fantasy app prototype used by internal stakeholders for demo and testing. Scaled to handle 10k+ user actions per match.',
-      },
-    },
-  ],
+  },
+],
 
   // Education
   education: [
     {
-      degree: 'Bachelor of Engineering in Electronics & Communication',
+      degree: 'Bachelor of Technology in Computer Science with Specialization in Ai/Ml',
       institution: 'Medicaps Institute of Technology & Management',
       location: 'Indore, India',
-      period: '2015 - 2019',
+      period: '2024 - 2028',
       grade: '',
       description:
-        'Focused on embedded systems, electronics fundamentals, and software development including Java and full-stack web technologies.',
-    },
-    {
-      degree: 'Class XII',
-      institution: 'Govt. Boys Higher Secondary School',
-      location: 'India',
-      period: '2014 - 2015',
-      grade: '',
-      description: 'Completed higher secondary education in science stream.',
+        'Software development Java as of now as i am in 2nd year currently .',
     },
   ],
 
-  // Certifications
-  certifications: [
-    {
-      name: 'AWS Certified Solutions Architect',
-      issuer: 'Amazon Web Services',
-      date: '2023',
-      credentialId: 'AWS-SAA-123456',
-    },
-    {
-      name: 'Oracle Certified Professional, Java SE Developer',
-      issuer: 'Oracle',
-      date: '2022',
-      credentialId: 'OCP-JAVA-789012',
-    },
-    {
-      name: 'Spring Professional Certification',
-      issuer: 'VMware',
-      date: '2021',
-      credentialId: 'SPRING-PRO-345678',
-    },
-  ],
+ 
+},
 };
-
 // Blog Data
 export const blogData = [
   {
